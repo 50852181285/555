@@ -6,11 +6,11 @@
   "description": "桌面大肥鱼插件 - 在鸿蒙桌面上显示一只可爱的大肥鱼，支持喂食、互动和心情变化",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/50852181285/desktop-fat-fish-plugin.git"
+    "url": "git+https://github.com/50852181285/555.git"
   },
-  "homepage": "https://github.com/50852181285/desktop-fat-fish-plugin",
+  "homepage": "https://github.com/50852181285/555",
   "bugs": {
-    "url": "https://github.com/50852181285/desktop-fat-fish-plugin/issues"
+    "url": "https://github.com/50852181285/555/issues"
   },
   "main": "./index.js",
   "exports": {
