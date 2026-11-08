@@ -1,0 +1,6 @@
+# desktop-fat-fish-plugin bundle patch.
+# 一行 insert 即挂载 Host 半身；浏览器半身由 package.json 的 dsh.client 声明
+- insert:
+    - id: desktop-fat-fish
+      name: 'desktop-fat-fish-plugin'
+      config: {}

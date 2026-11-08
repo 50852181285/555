@@ -1,0 +1,58 @@
+{
+  "name": "desktop-fat-fish-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "桌面大肥鱼插件 - 在鸿蒙桌面上显示一只可爱的大肥鱼，支持喂食、互动和心情变化",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/50852181285/desktop-fat-fish-plugin.git"
+  },
+  "homepage": "https://github.com/50852181285/desktop-fat-fish-plugin",
+  "bugs": {
+    "url": "https://github.com/50852181285/desktop-fat-fish-plugin/issues"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test src/**/*.test.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "files": [
+    "index.js",
+    "src",
+    "cordis.patch.yml",
+    "icon.svg",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "desktop",
+    "pet",
+    "fish",
+    "harmonyos"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-commands": "^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1",
+    "@deepseek-ai/dsh-credentials": "^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1"
+  }
+}

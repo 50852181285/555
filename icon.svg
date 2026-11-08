@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="fishBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF9EB8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD1DC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fishBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF0F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB6C1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fishEye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#4A4A4A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 鱼尾 -->
+  <path d="M 20 64 Q 0 30 10 64 Q 0 98 20 64" fill="url(#fishBody)" opacity="0.9"/>
+  
+  <!-- 鱼身 -->
+  <ellipse cx="64" cy="64" rx="50" ry="30" fill="url(#fishBody)" filter="url(#glow)"/>
+  
+  <!-- 鱼腹 -->
+  <ellipse cx="64" cy="70" rx="40" ry="20" fill="url(#fishBelly)"/>
+  
+  <!-- 背鳍 -->
+  <path d="M 50 35 Q 55 15 70 30 Q 65 35 50 35" fill="url(#fishBody)" opacity="0.8"/>
+  
+  <!-- 腹鳍 -->
+  <path d="M 45 85 Q 40 100 55 90 Q 50 88 45 85" fill="url(#fishBody)" opacity="0.8"/>
+  <path d="M 85 85 Q 90 100 75 90 Q 80 88 85 85" fill="url(#fishBody)" opacity="0.8"/>
+  
+  <!-- 鱼嘴 -->
+  <path d="M 110 64 Q 120 64 110 70" stroke="#FF6B9D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- 鱼眼 -->
+  <circle cx="95" cy="55" r="10" fill="url(#fishEye)"/>
+  <circle cx="97" cy="53" r="3" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="93" cy="57" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- 腮 -->
+  <path d="M 75 55 Q 70 64 75 73" stroke="#FF6B9D" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 75 60 Q 68 64 75 68" stroke="#FF6B9D" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- 气泡装饰 -->
+  <circle cx="110" cy="30" r="4" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="118" cy="20" r="3" fill="#FFFFFF" opacity="0.2"/>
+  <circle cx="105" cy="15" r="2" fill="#FFFFFF" opacity="0.4"/>
+</svg>
